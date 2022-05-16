@@ -1,0 +1,5 @@
+const fs = require('fs')
+// console.log(fs)
+let data = fs.readFileSync(process.argv[2])
+// console.log(data)
+console.log(data.toString().split("\n").length-1)
